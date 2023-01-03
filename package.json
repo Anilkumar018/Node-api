@@ -1,0 +1,23 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "A simple node api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anilkumar018/Node-api.git"
+  },
+  "author": "Anil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anilkumar018/Node-api/issues"
+  },
+  "homepage": "https://github.com/Anilkumar018/Node-api#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
