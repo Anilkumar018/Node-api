@@ -14,13 +14,16 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get('/', (req,res) => {
-    res.send("good morning teacher");
-})
+const __user_router = require('.src/route/user.route');
+app.use('/user', __user_router);
 
-app.get('/student', (req,res) => {
-    res.send("ohhh, hey children");
-})
+// app.get('/', (req,res) => {
+//     res.send("good morning teacher");
+// })
+
+// app.get('/student', (req,res) => {
+//     res.send("ohhh, hey children");
+// })
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`server started on localhost : ${PORT}`));
